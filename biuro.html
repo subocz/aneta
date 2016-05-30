@@ -1,0 +1,345 @@
+﻿
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Biuro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+      <script src="js/jquery.js"></script>
+<script src="http://www.outsharked.com/scripts/jquery.imagemapster.js"></script>
+ <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="css/sbimenu.css" />
+
+    <!-- Le styles -->
+    <style type="text/css">
+
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 900px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+ 
+    </style>
+   
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+
+   
+       
+
+
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="index.html">Strona główna</a></li>
+          <li><a href="omnie.html">O mnie</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+       <h3 class="muted">Aneta Subocz - portfolio studenckie</h3>
+      </div>
+
+<hr>
+<div class="content">
+
+<p class="lead">Biuro w trakcie realizacji. Pierwsze zdjęcia:</p>
+<p><a href="http://www.domzestodoly.pl/2013/09/biuro-ko-przytyte.html">Link1</a>, <a href="http://www.domzestodoly.pl/2013/09/b-2.html">Link2</a></p>
+  <hr>
+<p><img id="obraz1" src="img/biuro/1.jpg" class="img-rounded"></p>
+<p><img id="obraz1" src="img/biuro/2.jpg" class="img-rounded"></p>
+<p><img id="obraz1" src="img/biuro/3.jpg" class="img-rounded"></p>
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; 2013 Aneta Subocz</p>
+      </div>
+
+
+
+
+
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+ 
+ <script language="javascript">
+ $(document).ready(function ()
+  {
+			
+			
+			
+			
+   
+    
+   
+    var image = $('#obraz1');
+    image.mapster(
+    {
+        fillOpacity: 0.4,
+        fillColor: "FFFFFF",
+        stroke: true,
+        strokeColor: "FFFFFF",
+        strokeOpacity: 0.8,
+        strokeWidth: 4,
+        singleSelect: true,
+        mapKey: 'name',
+        listKey: 'name',        
+        showToolTip: true,
+        toolTipClose: ["area-mouseout"],
+        areas: [
+            {
+                key: "obraz1_1",
+                toolTip: 'tooltip jeden'
+            },
+            {
+                key: "obraz1_2",      
+                toolTip: 'tooltip dwa'
+            },
+            {
+                key: "obraz1_3",  
+                toolTip: 'tooltip trzy'
+            },
+            {
+                key: "obraz1_4",
+                toolTip: 'tooltip cztery'
+            },
+            {
+                key: "obraz1_5",
+                toolTip: 'tooltip piec'
+            }
+            ]
+    });
+    
+   var image2 = $('#obraz2');
+    image2.mapster(
+    {
+        fillOpacity: 0.4,
+        fillColor: "FFFFFF",
+        stroke: true,
+        strokeColor: "FFFFFF",
+        strokeOpacity: 0.8,
+        strokeWidth: 4,
+        singleSelect: true,
+        mapKey: 'name',
+        listKey: 'name',        
+        showToolTip: true,
+        toolTipClose: ["area-mouseout"],
+        areas: [
+            {
+                key: "obraz2_1",
+                toolTip: 'tooltip jeden'
+            },
+            {
+                key: "obraz2_2",      
+                toolTip: 'tooltip dwa'
+            }
+            ]
+    });      
+    
+   var image3 = $('#obraz3');
+    image3.mapster(
+    {
+        fillOpacity: 0.4,
+        fillColor: "FFFFFF",
+        stroke: true,
+        strokeColor: "FFFFFF",
+        strokeOpacity: 0.8,
+        strokeWidth: 4,
+        singleSelect: true,
+        mapKey: 'name',
+        listKey: 'name',        
+        showToolTip: true,
+        toolTipClose: ["area-mouseout"],
+        areas: [
+            {
+                key: "obraz3_1",
+                toolTip: 'tooltip jeden'
+            },
+            {
+                key: "obraz3_2",      
+                toolTip: 'tooltip dwa'
+            },
+            {
+                key: "obraz3_3",      
+                toolTip: 'tooltip trzy'
+            }
+            ]
+    });          
+    
+    
+   var image4 = $('#obraz4');
+    image4.mapster(
+    {
+        fillOpacity: 0.4,
+        fillColor: "FFFFFF",
+        stroke: true,
+        strokeColor: "FFFFFF",
+        strokeOpacity: 0.8,
+        strokeWidth: 4,
+        singleSelect: true,
+        mapKey: 'name',
+        listKey: 'name',        
+        showToolTip: true,
+        toolTipClose: ["area-mouseout"],
+        areas: [
+            {
+                key: "obraz4_1",
+                toolTip: 'tooltip jeden'
+            },
+            {
+                key: "obraz4_2",      
+                toolTip: 'tooltip dwa'
+            },
+            {
+                key: "obraz4_3",      
+                toolTip: 'tooltip trzy'
+            },
+            {
+                key: "obraz4_4",      
+                toolTip: 'tooltip cztery'
+            }
+            ]
+    });              
+    
+   var image5 = $('#obraz5');
+    image5.mapster(
+    {
+        fillOpacity: 0.4,
+        fillColor: "FFFFFF",
+        stroke: true,
+        strokeColor: "FFFFFF",
+        strokeOpacity: 0.8,
+        strokeWidth: 4,
+        singleSelect: true,
+        mapKey: 'name',
+        listKey: 'name',        
+        showToolTip: true,
+        toolTipClose: ["area-mouseout"],
+        areas: [
+            {
+                key: "obraz5_1",
+                toolTip: 'tooltip jeden'
+            },
+            {
+                key: "obraz5_2",      
+                toolTip: 'tooltip dwa'
+            }
+            ]
+    });          
+    
+    var image6 = $('#obraz6');
+    image6.mapster(
+    {
+        fillOpacity: 0.4,
+        fillColor: "FFFFFF",
+        stroke: true,
+        strokeColor: "FFFFFF",
+        strokeOpacity: 0.8,
+        strokeWidth: 4,
+        singleSelect: true,
+        mapKey: 'name',
+        listKey: 'name',        
+        showToolTip: true,
+        toolTipClose: ["area-mouseout"],
+        areas: [
+            {
+                key: "obraz6_1",
+                toolTip: 'tooltip jeden'
+            },
+            {
+                key: "obraz6_2",      
+                toolTip: 'tooltip dwa'
+            },
+            {
+                key: "obraz6_3",  
+                toolTip: 'tooltip trzy'
+            },
+            {
+                key: "obraz6_4",
+                toolTip: 'tooltip cztery'
+            },
+            {
+                key: "obraz6_5",
+                toolTip: 'tooltip piec'
+            },
+            {
+                key: "obraz6_6",
+                toolTip: 'tooltip piec'
+            },
+            {
+                key: "obraz6_7",
+                toolTip: 'tooltip piec'
+            }
+            ]
+    });    
+    
+    
+    
+    
+    
+    
+    
+    
+    });
+    
+  
+			
+		</script>
+
+ 
+
+  </body>
+</html>
